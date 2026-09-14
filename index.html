@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Printed License Search Management System (PLSMS)</title>
+    <meta name="description" content="Enterprise-grade Printed License Search Management System (PLSMS) with Public Search Portal, Super Admin command center, real Excel/CSV batch upload engine, normalized JSON archiving, receiver distribution logging, and audit tracking." />
+    <meta property="og:title" content="Printed License Search Management System (PLSMS)" />
+    <meta property="og:description" content="Enterprise-grade Printed License Search Management System (PLSMS) with Public Search Portal, Super Admin command center, real Excel/CSV batch upload engine, normalized JSON archiving, receiver distribution logging, and audit tracking." />
+    <link rel="icon" type="image/png" href="/emblem_of_nepal.png" />
+    <link rel="apple-touch-icon" href="/emblem_of_nepal.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Global error shield to prevent cross-origin iframe Script error masking
+      window.onerror = function(message, source, lineno, colno, error) {
+        if (!message || message === 'Script error.' || !source) {
+          return true;
+        }
+        var msg = String(message || '');
+        if (msg.includes('WebSocket') || msg.includes('websocket') || msg.includes('vite')) {
+          return true;
+        }
+      };
+
+      // Suppress benign Vite HMR WebSocket errors in AI Studio iframe sandbox
+      window.addEventListener('unhandledrejection', function(event) {
+        var reasonStr = '';
+        try {
+          reasonStr = event && event.reason ? (event.reason.message || String(event.reason)) : '';
+        } catch (e) {}
+
+        if (
+          reasonStr.includes('WebSocket') ||
+          reasonStr.includes('websocket') ||
+          reasonStr.includes('closed without opened')
+        ) {
+          if (event && typeof event.preventDefault === 'function') event.preventDefault();
+          if (event && typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+          return;
+        }
+
+        if (event && event.reason) {
+          console.warn('Handled unhandled rejection:', event.reason);
+        }
+        if (event && typeof event.preventDefault === 'function') event.preventDefault();
+      });
+
+      // Intercept and silence benign Vite HMR connection logs in browser console
+      (function() {
+        var origConsoleError = console.error;
+        console.error = function() {
+          var first = arguments[0] ? String(arguments[0]) : '';
+          if (
+            first.includes('[vite] failed to connect to websocket') ||
+            first.includes('WebSocket closed without opened')
+          ) {
+            return;
+          }
+          origConsoleError.apply(console, arguments);
+        };
+
+        var origConsoleWarn = console.warn;
+        console.warn = function() {
+          var first = arguments[0] ? String(arguments[0]) : '';
+          if (
+            first.includes('[vite] failed to connect to websocket') ||
+            first.includes('WebSocket closed without opened')
+          ) {
+            return;
+          }
+          origConsoleWarn.apply(console, arguments);
+        };
+      })();
+
+      // Default to Dark theme on mobile screens
+      try {
+        if (window.innerWidth < 640 || localStorage.getItem('plsms_theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.setAttribute('data-theme', 'dark');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div id="root"></div>
+    <script type="module" crossorigin src="/src/main.tsx"></script>
+  </body>
+</html>

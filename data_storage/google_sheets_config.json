@@ -1,0 +1,43 @@
+{
+  "spreadsheetId": "1xmQr_W8uLyDP7KZWrbcoQkUfbWjVDDGxmtPnp0AXGnw",
+  "tabName": "Testing",
+  "publishedUrl": "",
+  "webAppUrl": "https://script.google.com/macros/s/AKfycbwZFGFdGpf5NJmZ0PfRmwNDkDG3yA5MO6vZbq6rQV_QXiHnyZVxV69vqDxxGpEtF2DLTg/exec",
+  "lastSyncAt": "2026-09-13T17:36:42.385Z",
+  "syncState": "SYNCED",
+  "indexedInRam": 23,
+  "lastSyncDurationMs": 253,
+  "duplicatesCount": 0,
+  "invalidRowsCount": 0,
+  "totalSheetRows": 23,
+  "duplicateItems": [],
+  "invalidItems": [],
+  "serviceAccountEmail": "plsms-sync-proxy@nepal-transport-gov.iam.gserviceaccount.com",
+  "serviceAccountConfigured": false,
+  "proxyMode": "BACKEND_PROXY",
+  "autoSync24hEnabled": true,
+  "autoSyncIntervalSeconds": 60,
+  "continuousSyncStatus": "CONNECTED_24_7",
+  "successful24hSyncCount": 479,
+  "lastHeartbeatAt": "2026-09-13T17:36:42.385Z",
+  "nextScheduledSyncAt": "2026-09-13T17:37:42.394Z",
+  "sheetStats": {
+    "totalRecords": 23,
+    "availableRecords": 13,
+    "distributedRecords": 10,
+    "missingRecords": 1,
+    "foundRecords": 5,
+    "handedOverRecords": 5
+  },
+  "lastWritebackResult": {
+    "success": true,
+    "row": 21,
+    "licenseNumber": "01-02-00857744",
+    "timestamp": "2026-09-13T17:35:39.839Z",
+    "message": "Live updated Google Sheet (Row 21) via Apps Script Webhook"
+  },
+  "visitorStats": {
+    "totalVisitors": 51,
+    "lastUpdated": "2026-09-13T03:43:27.538Z"
+  }
+}

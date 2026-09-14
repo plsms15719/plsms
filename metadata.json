@@ -1,0 +1,8 @@
+{
+  "name": "PLSMS",
+  "description": "Enterprise-grade License Record Management System (LRMS) with Public Search Portal, Super Admin command center, real Excel/CSV batch upload engine, normalized JSON archiving, receiver distribution logging, and audit tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

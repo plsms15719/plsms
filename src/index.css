@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  html.dark body,
+  body.dark-theme {
+    background-color: #0b0f19;
+    color: #f1f5f9;
+  }
+}
+
+/* Custom Scrollbar for dark theme */
+html.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+
+/* Silent Blinking Animations */
+@keyframes silentBlinkQR {
+  0%, 100% {
+    opacity: 1;
+    border-color: rgba(148, 163, 184, 0.5);
+    box-shadow: 0 0 0px rgba(56, 189, 248, 0);
+  }
+  50% {
+    opacity: 0.85;
+    border-color: rgba(56, 189, 248, 0.9);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+  }
+}
+
+@keyframes silentBlinkSun {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px rgba(251, 191, 36, 0.4));
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+    filter: drop-shadow(0 0 9px rgba(251, 191, 36, 0.9));
+  }
+}
+
+.animate-silent-qr {
+  animation: silentBlinkQR 2.8s ease-in-out infinite;
+}
+
+.animate-silent-sun {
+  animation: silentBlinkSun 2.6s ease-in-out infinite;
+}
+
+/* ========================================================================= */
+/* LIGHT THEME READABILITY & HIGH-CONTRAST TEXT OVERRIDES                     */
+/* Applies ONLY when light theme is active (html:not(.dark))                 */
+/* ========================================================================= */
+
+html:not(.dark) {
+  color-scheme: light;
+}
+
+/* Global body baseline */
+html:not(.dark) body {
+  color: #0f172a;
+}
+
+/* All inputs, textareas, and selects text color in light theme */
+html:not(.dark) input:not([type="checkbox"]):not([type="radio"]),
+html:not(.dark) textarea,
+html:not(.dark) select {
+  color: #0f172a !important;
+}
+
+/* Form placeholders - deep dark slate for high contrast & clarity */
+html:not(.dark) input::placeholder,
+html:not(.dark) textarea::placeholder,
+html:not(.dark) select::placeholder,
+html:not(.dark) ::placeholder {
+  color: #334155 !important; /* deep slate-700 */
+  opacity: 1 !important;
+}
+
+/* Subheadings, descriptions, muted text, minor headings & secondary metadata */
+html:not(.dark) .text-slate-300,
+html:not(.dark) .text-gray-300,
+html:not(.dark) .text-zinc-300 {
+  color: #1e293b !important; /* rich slate-800 */
+}
+
+html:not(.dark) .text-slate-400,
+html:not(.dark) .text-gray-400,
+html:not(.dark) .text-zinc-400 {
+  color: #334155 !important; /* crisp slate-700 */
+}
+
+html:not(.dark) .text-slate-500,
+html:not(.dark) .text-gray-500,
+html:not(.dark) .text-zinc-500 {
+  color: #1e293b !important; /* rich slate-800 */
+}
+
+html:not(.dark) .text-slate-600,
+html:not(.dark) .text-gray-600,
+html:not(.dark) .text-zinc-600 {
+  color: #0f172a !important; /* solid slate-900 */
+}
+
+/* Form labels & field descriptions in light theme */
+html:not(.dark) label {
+  color: #1e293b;
+}
+
+/* Table headers & cells */
+html:not(.dark) th {
+  color: #0f172a !important;
+}
+
+/* Notice & Article paragraphs */
+html:not(.dark) .notice-rendered-content,
+html:not(.dark) article p {
+  color: #0f172a !important;
+}
+
+

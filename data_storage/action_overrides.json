@@ -1,0 +1,23 @@
+{
+  "0": {
+    "id": "REC_1789130219838_1_lf13",
+    "licenseNumber": "01-02-89080067",
+    "applicationNumber": "9205154",
+    "status": "DISTRIBUTED",
+    "issueFlag": "NORMAL",
+    "mainStatus": "DISTRIBUTED",
+    "isDistributed": true,
+    "distributedAt": "2026-09-11T15:51:03.994Z",
+    "distributedDate": "2083-05-26",
+    "distributedBy": "KOMAL DAHAL",
+    "receivedBy": "Sujita Chaudhary",
+    "receiverName": "Sujita Chaudhary",
+    "submittedDocument": "Traffic Police Letter",
+    "receiverPhone": "SELF_VERIFIED",
+    "receiverNid": "SELF_VERIFIED",
+    "receiverRelation": "SELF",
+    "receiverRemarks": "Direct single-card handover logged from Search terminal",
+    "handoverReference": "REF-863994-A06",
+    "updatedAt": "2026-09-11T15:51:03.994Z"
+  }
+}

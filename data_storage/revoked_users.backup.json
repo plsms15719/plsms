@@ -1,0 +1,20 @@
+[
+  {
+    "id": "TEST_REVOKE_USER",
+    "revokedAt": "2026-09-24T10:00:35.177Z",
+    "revokedBy": "SUPER_ADMIN",
+    "reason": "Testing revocation"
+  },
+  {
+    "id": "TEST_REVOKE_999",
+    "revokedAt": "2026-09-24T10:04:52.411Z",
+    "revokedBy": "TMO SUNSARI ADMINISTRATOR",
+    "reason": "Permanently revoked and deleted by Super Administrator"
+  },
+  {
+    "id": "PERM_TEST_USER_42",
+    "revokedAt": "2026-09-24T10:10:06.463Z",
+    "revokedBy": "TMO SUNSARI ADMINISTRATOR",
+    "reason": "Permanently revoked and deleted by Super Administrator"
+  }
+]

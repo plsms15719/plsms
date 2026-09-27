@@ -1,0 +1,51 @@
+[
+  {
+    "id": "NOTICE_1788621682829_1ciy5",
+    "title": "स्मार्ट कार्ड वितरण सम्बन्धी सूचना ।।",
+    "content": "यातायात व्यवस्था विभाग, मिनभवन, काठमाण्डौबाट Backlog License हरु कार्यालयमा प्रिन्ट भई आएको र उक्त लाईसेन्सहरु वितरण गर्नकोलागि तयारी अवस्थामा रहेकोले सेवाग्राहीहरुले आफ्नो Smart Card आए नआएको एकिन गर्नको लागि तलको लिंकमा Click गर्नुहोला । \n\nयदि तपाईको लाईसेन्स आएको पाईएमा यस कार्यालयमा सोमबारदेखि शुक्रबारसम्म उल्लेखित शाखामा सम्पर्क राख्नु हुन अनुरोध गरिन्छ ।\nhttps://drive.google.com/file/d/1ZbmCy1c8MKIcrfEpjHEVVUvu08mPElym/view?fbclid=IwY2xjawUJEo9wZG9mBWV4dG4DYWVtAjExAHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4-Q1Mvw-2OykDU0PT1Z1ib73Gf3ozPHAjgsFjv87i1nY38eY4O8cafXZE4Xg_aem_MPtY8AGurC7acs0SfcMLXg",
+    "publishedDateBS": "2083-05-20",
+    "publishedDateAD": "2026-09-05T15:21:22.829Z",
+    "publishedBy": "SUPER ADMIN",
+    "authorName": "KOMAL DAHAL",
+    "status": "ACTIVE",
+    "isPinned": true,
+    "priority": "NORMAL",
+    "category": "GENERAL",
+    "department": "Department - क & Department - ख",
+    "attachment": null,
+    "createdAt": "2026-09-05T15:21:22.829Z",
+    "updatedAt": "2026-09-05T15:21:22.829Z"
+  },
+  {
+    "id": "NOTICE_1",
+    "title": "Smart Driving License Cards Available for Collection",
+    "content": "Smart cards are available in the offices so we announce you to all to contact in office to collect your smart cards. Please bring your original application slip/receipt, citizenship certificate, and valid identification to collect your printed smart driving license.",
+    "publishedDateBS": "2083-05-15",
+    "publishedDateAD": "2026-09-01T08:00:00.000Z",
+    "publishedBy": "SUPER ADMIN",
+    "authorName": "KOMAL DAHAL",
+    "status": "ACTIVE",
+    "isPinned": true,
+    "priority": "IMPORTANT",
+    "category": "DISTRIBUTION",
+    "department": "Department - क & Department - ख",
+    "createdAt": "2026-09-01T08:00:00.000Z",
+    "updatedAt": "2026-09-01T08:00:00.000Z"
+  },
+  {
+    "id": "NOTICE_2",
+    "title": "Smart Card Distribution Schedule (Monday to Friday, 9:30 AM to 4:30 PM)",
+    "content": "Smart cards will be distributed by Monday to Friday from 9:30 to 4:30 in Department - क and Department - ख. All applicants are kindly requested to visit during these designated office hours.",
+    "publishedDateBS": "2083-05-15",
+    "publishedDateAD": "2026-09-01T09:00:00.000Z",
+    "publishedBy": "SUPER ADMIN",
+    "authorName": "KOMAL DAHAL",
+    "status": "ACTIVE",
+    "isPinned": false,
+    "priority": "NORMAL",
+    "category": "TIMING",
+    "department": "Department - क & Department - ख",
+    "createdAt": "2026-09-01T09:00:00.000Z",
+    "updatedAt": "2026-09-01T09:00:00.000Z"
+  }
+]

@@ -6640,10 +6640,12 @@ async function verifyUserPassword(
           console.warn('[PLSMS Database] Warning migrating data to PostgreSQL:', mErr.message);
         }
         try {
-          await reloadRecordsCacheFromPg();
-        } catch (rErr: any) {
-          console.warn('[PLSMS Database] Warning reloading records cache from PostgreSQL:', rErr.message);
-        }
+  // Skipped in-memory array cache to stay within Render's 512MB RAM limit.
+  // PostgreSQL handles all search queries via disk indexes.
+  console.log('[PLSMS Database] Bypassing heap cache to conserve memory.');
+} catch (rErr: any) {
+  console.warn('[PLSMS Database] Warning skipping records cache:', rErr.message);
+}
         const test = await testPostgresConnection();
         if (test.ok) {
           const count = await getRecordsCountInPg();
